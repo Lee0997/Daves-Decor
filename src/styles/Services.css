@@ -1,0 +1,139 @@
+.services-section {
+  padding: 2rem 0;
+  background: var(--neutral-bg);
+}
+
+.services-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.services-title {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.service-item {
+  background: var(--text-light);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  padding: 1.1rem 1.4rem;
+  min-width: 220px;
+  max-width: 260px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+  border: 1px solid var(--secondary);
+  transition: box-shadow 0.2s;
+}
+
+.service-item:hover {
+  box-shadow: 0 4px 16px var(--secondary);
+}
+
+.service-item-title {
+  font-size: 1.08rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.service-item-desc {
+  color: #444;
+  font-size: 0.98rem;
+}
+
+.services-image-placeholder {
+  width: 340px;
+  height: 340px;
+  background: #e9ecef;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 1.3rem;
+  font-style: italic;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.services-additional {
+  margin-top: 2rem;
+  color: var(--primary);
+  font-size: 1.05rem;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .services-list {
+    gap: 0.7rem;
+    max-width: 100%;
+  }
+  .service-item {
+    min-width: 140px;
+    max-width: 180px;
+    padding: 0.7rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-content-wrapper {
+    padding: 0 2px;
+    gap: 0.7rem;
+    max-width: 100%;
+  }
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 100%;
+  }
+  .service-item {
+    min-width: 0; /* Fix horizontal scroll */
+    max-width: 100%;
+    width: 100%;
+    padding: 0.6rem 0.3rem;
+    max-height: 10vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .services-additional {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+  .services-section {
+    padding: 1rem 0;
+  }
+}

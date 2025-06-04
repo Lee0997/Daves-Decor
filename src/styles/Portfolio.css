@@ -1,0 +1,162 @@
+.portfolio-section {
+  padding: 2.5rem 0;
+  background: var(--neutral-bg);
+}
+
+.portfolio-title {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  background: var(--text-light);
+  border: 1px solid var(--secondary);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  max-width: 420px;
+  min-width: 320px;
+  flex: 1 1 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-images {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-image-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-img {
+  width: 150px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.3rem;
+}
+
+.portfolio-img-label {
+  font-size: 0.92rem;
+  color: #888;
+}
+
+.portfolio-caption {
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.portfolio-category {
+  display: inline-block;
+  background: var(--secondary);
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.18rem 0.7rem;
+  margin-bottom: 0.4rem;
+}
+
+.portfolio-testimonial {
+  margin-top: 0.6rem;
+  background: #f6fafd;
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  font-size: 0.98rem;
+  color: #333;
+  width: 100%;
+}
+
+.portfolio-testimonial blockquote {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+.portfolio-testimonial footer {
+  margin-top: 0.4rem;
+  font-size: 0.93rem;
+  color: #007bff;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .portfolio-list {
+    gap: 0.7rem;
+    max-width: 100%;
+  }
+  .portfolio-card {
+    max-width: 100%;
+    min-width: 0;
+    flex: 1 1 100%;
+    padding: 1rem 0.5rem 0.7rem 0.5rem;
+    max-height: 70vw;
+  }
+  .portfolio-testimonial {
+    font-size: 0.93rem;
+    padding: 0.5rem 0.5rem;
+    word-break: break-word;
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-section {
+    padding: 0.7rem 0;
+  }
+  .portfolio-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .portfolio-list {
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 100%;
+  }
+  .portfolio-card {
+    max-width: 100%;
+    min-width: 0;
+    width: 99vw;
+    padding: 0.7rem 0.2rem 0.5rem 0.2rem;
+  }
+  .portfolio-img {
+    width: 40vw;
+    height: 28vw;
+    min-width: 60px;
+    min-height: 40px;
+  }
+  .portfolio-testimonial {
+    font-size: 0.89rem;
+    padding: 0.4rem 0.2rem;
+    word-break: break-word;
+  }
+  .portfolio-testimonial blockquote {
+    font-size: 0.97rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio-img {
+    width: 85vw;
+    height: 50vw;
+  }
+}

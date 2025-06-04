@@ -1,0 +1,109 @@
+/* Dave's Decor Palette */
+:root {
+  --primary: #1e3a5c; /* Deep blue from logo */
+  --secondary: #f7c873; /* Warm gold from logo */
+  --accent: #e85d04; /* Orange accent from logo */
+  --neutral-bg: #f4f4f4; /* Light background */
+  --text-main: #222b38; /* Main text color */
+  --text-light: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: break-word;
+  background: var(--neutral-bg);
+  color: var(--text-main);
+}
+
+body,
+html {
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
+}
+
+h1 {
+  color: var(--primary);
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button,
+.quotes-cta-btn,
+.action-call,
+.carousel-cta-btn {
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover,
+.quotes-cta-btn:hover,
+.action-call:hover,
+.carousel-cta-btn:hover {
+  background-color: var(--accent);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 12px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  :root {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 6px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .button {
+    width: 100%;
+    font-size: 1rem;
+  }
+  body,
+  html {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
